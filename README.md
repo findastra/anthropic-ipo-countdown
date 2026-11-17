@@ -42,7 +42,6 @@ Astra's beginner's guide to the Anthropic IPO: what an IPO is, how the lottery w
 
 - [Read the guide online](https://findastra.github.io/anthropic-ipo/)
 - [Download the one-page PDF](guide/Anthropic_IPO_Field_Guide.pdf)
-- TikTok versions (9:16): [one page](guide/TikTok_Field_Guide_1-Page.pdf) and [two pages](guide/TikTok_Field_Guide_2-Pages.pdf)
 
 Not financial advice. Dates and prices are estimates until the official prospectus.
 
