@@ -34,6 +34,18 @@ As reported on November 15, 2026: pricing on or about Wednesday, November 18, an
 on **Thursday, November 19**, counted to the 9:30am opening bell in New York. **Not final.** If it moves, the app's
 settings change it ([how](https://github.com/findastra/ai-ipo-countdown/blob/main/anthropic-ipo-countdown/README.md#the-dates)).
 
+## The Field Guide
+
+Astra's beginner's guide to the Anthropic IPO: what an IPO is, how the lottery works, the brokers, and the next steps.
+
+<p align="center"><a href="https://findastra.github.io/anthropic-ipo/"><img src="guide/preview.png" alt="Anthropic IPO: The Beginner's Field Guide" width="648"></a></p>
+
+- [Read the guide online](https://findastra.github.io/anthropic-ipo/)
+- [Download the one-page PDF](guide/Anthropic_IPO_Field_Guide.pdf)
+- TikTok versions (9:16): [one page](guide/TikTok_Field_Guide_1-Page.pdf) and [two pages](guide/TikTok_Field_Guide_2-Pages.pdf)
+
+Not financial advice. Dates and prices are estimates until the official prospectus.
+
 ## Developer Notes
 
 1. **Where the code is:** the app is built and kept in
