@@ -31,7 +31,7 @@ What every button does, and the quirks:
 ## The Date
 
 As reported on November 15, 2026: pricing on or about Wednesday, November 18, and the first trade on Nasdaq as **ANT**
-on **Thursday, November 19**, counted to the 9:30am opening bell in New York. **Not final.** If it moves, the app's
+on **Thursday, November 19**. The market opened at 9:30am in New York, but ANT's first trade is expected later, about 11:30am New York (9:30am Boise). **Not final.** If it moves, the app's
 settings change it ([how](https://github.com/findastra/ai-ipo-countdown/blob/main/anthropic-ipo-countdown/README.md#the-dates)).
 
 ## The Field Guide
