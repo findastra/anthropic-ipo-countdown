@@ -73,7 +73,7 @@ body .simval.px { font-size: 16px; }
 .simleg .ll { border-top: 2px dashed var(--price-border); }
 .simleg .filled { border-top: 2px solid var(--price-border); }
 .maxp b { color: var(--price); }
-.tl.row .ev .pb .px.live.dn::before { border-bottom-color: var(--price-border); }
+.tl.row :is(.ev,.nowev) .pb .px.live.dn::before { border-bottom-color: var(--price-border); }
 /* Date and time colors follow the existing Tuesday / Wednesday / Thursday key. */
 .dt { color: var(--mut); font-family: SM, monospace; font-weight: 400; }
 .dt.d0 { color: var(--lav); }
@@ -498,3 +498,35 @@ body .shq > .sx { margin-right: 6px !important; }
 .tagline .livebx .rec { width: 10px; height: 10px; border-radius: 50%; background: #ff3b4e; box-shadow: 0 0 8px #ff3b4e; animation: recblink 1.2s ease-in-out infinite; }
 @keyframes recblink { 0%,100% { opacity: 1; } 50% { opacity: .2; } }
 @media print { .tagline .livebx .rec { animation: none; } }
+
+/* market projections: four caps, $1.5T / $2T / $3T / $5T (Astra 2026-11-19) */
+.two .ch.ch4, .two .lbs.lbs4 { grid-template-columns: repeat(4, 1fr) !important; }
+.ch.ch4 .c:nth-child(4) { --scenario: #b9a4ff; }
+.ch.ch4 .note .hw { font-size: 22px; }
+.two .lbs.lbs4 .lb { min-width: 0; }
+.two .lbs.lbs4 .lb .x, .two .lbs.lbs4 .lb .ps2 { margin-bottom: 4px !important; }
+
+/* lottery badges stay on one line (MISSED BUY IN) */
+.lc .ph i { white-space: nowrap; flex-shrink: 0; }
+/* small frowny face to the right of the SoFi 0 AWARDED badge */
+.lc .ph .frown { margin-left: 5px; font-family: "Segoe UI Symbol", sans-serif; font-size: 15px; line-height: 1; color: #ff7a8a; flex-shrink: 0; }
+.lc .ph:has(.frown) { justify-content: flex-start; }
+.lc .ph:has(.frown) i { margin-left: auto; }
+/* live Boise clock under the LIVE box (Astra 2026-11-19) */
+.tagline .livewrap { position: relative; display: inline-block; vertical-align: middle; }
+.tagline .liveclock { position: absolute; top: calc(100% + 5px); left: 0; font-family: SM, monospace; font-size: 12px; letter-spacing: .3px; color: #ff7a8a; white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* date under each projection bar (Astra 2026-11-19) */
+.two .lbs.lbs4 .lb .lbd { display: block; margin-bottom: 6px; font-family: SM, monospace; font-size: 12px; line-height: 1.25; color: var(--ink); }
+/* Astra's own notes as bullets under steps 06 › 01 and 06 › 02 (Astra 2026-11-19) */
+.steps .astb { margin: 6px 0 0; padding-left: 20px; list-style: disc; }
+.steps .astb li { margin: 0; padding: 0; line-height: 1.85 !important; }
+.steps .astb li::marker { color: #ff5fd8; }
+/* Budget / Max price words match the input labels in the option cards */
+.steps .astb .inl { font-family: SM, monospace; font-size: 15.5px; font-weight: 400; color: rgb(169, 166, 207); text-transform: uppercase; letter-spacing: 1px; }
+/* pick-your-own dates for scheduled buys (Astra 2026-11-19) */
+.apr .ac .sim.big .dtrow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 8px; }
+.apr .ac .sim.big .dtrow label { font-family: SM, monospace; font-size: 15.5px; font-weight: 400; color: rgb(169, 166, 207); text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+.apr .ac .sim.big .dtrow .dts { display: flex; flex-wrap: wrap; gap: 6px; }
+.ordc .ot input.dt { box-sizing: content-box; width: 5ch; font-family: SM, monospace; font-size: 15.5px; font-weight: 700; line-height: 1.3; padding: 0 5px 1px; border-radius: 6px; border: 1.5px solid #e9f25c; background: rgba(248,255,166,.14); color: #f8ffa6; text-align: center; }
+.ordc .ot .bdt { font-family: SM, monospace; font-size: 13px; font-weight: 400; color: var(--mut); margin-left: 4px; }
+.ordc .ot input.dt { margin: 0 2px 0 4px; font-size: 13px; vertical-align: baseline; }
